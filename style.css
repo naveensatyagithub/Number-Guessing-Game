@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #e0c3fc, #8ec5fc);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-shadow: 1px 1px #fff;
+}
+
+.game-box {
+  background: #ffffffee;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.game-box:hover {
+  transform: scale(1.01);
+}
+
+input[type="number"] {
+  padding: 12px;
+  font-size: 18px;
+  width: 100px;
+  margin-right: 12px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+  border-color: #2196F3;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388E3C;
+}
+
+.feedback {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.feedback.success {
+  color: #2e7d32;
+}
+
+.feedback.error {
+  color: #d32f2f;
+}
+
+.feedback.hint {
+  color: #555;
+}
+
+.attempts {
+  margin-top: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+#resetBtn {
+  background-color: #2196F3;
+  margin-top: 25px;
+}
+
+#resetBtn:hover {
+  background-color: #1976D2;
+}
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Guess button */
+button.guess-btn {
+  background: linear-gradient(45deg, #4CAF50, #81C784);
+  color: white;
+}
+
+button.guess-btn:hover {
+  background: linear-gradient(45deg, #388E3C, #66BB6A);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(76, 175, 80, 0.4);
+}
+
+/* Reset button */
+button#resetBtn {
+  background: linear-gradient(45deg, #2196F3, #64B5F6);
+  color: white;
+  margin-top: 25px;
+}
+
+button#resetBtn:hover {
+  background: linear-gradient(45deg, #1976D2, #42A5F5);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(33, 150, 243, 0.4);
+}
+
